@@ -6,13 +6,15 @@ public class Calculate {
                 System.out.println("Calculate ...");
                 double first = Double.valueOf(arg[0]);
                 double second = Double.valueOf(arg[1]);
+                String s = String.valueOf(arg[2]);
+                
                 double add = first + second;
                 double sub = first - second;
                 double mult = first * second;
                 double div = first / second;
                 double modul = first % second;
                 double sqrd = Math.pow(first,second);
-                String s = String.valueOf(arg[2]);
+                
                 
                 System.out.println("Hello "+s);
                 System.out.println("Sum = "+ add);
