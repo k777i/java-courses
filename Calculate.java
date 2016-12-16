@@ -9,12 +9,14 @@ public class Calculate {
                 double mult = first * second;
                 double div = first / second;
                 double modul = first % second;
+                double sqrd = Math.pow(first,second);
 
                 System.out.println("Sum = "+ add);
                 System.out.println("Sub = "+ sub);
                 System.out.println("Mult = "+ mult);
                 System.out.println("Div = "+ div);
                 System.out.println("Modul = "+ modul);
+                System.out.println("Squared = "+ sqrd);
 
         }
 }
