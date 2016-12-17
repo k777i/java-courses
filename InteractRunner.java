@@ -7,10 +7,19 @@ public class InteractRunner {
 		Scanner reader = new Scanner(System.in);
 		try{
 			Calculator calc = new Calculator();
-			String exit = "no";
-			while(!exit.equals("yes")){
-				System.out.println("Enter first args :");
-				String first = reader.next();
+			String exit = "n";
+			String clear = "y";
+			String first ;
+			
+			while(!exit.equals("y")){
+				System.out.println("First args :");
+				
+				if(clear.equals("n")){
+					first =Integer.toString(calc.getResult());
+				    System.out.println(first );
+				    }else 
+					first = reader.next();
+				
 				System.out.println("Enter your arifmetic command :");
 				String command = reader.next();
 				System.out.println("Enter second args :");
@@ -26,8 +35,17 @@ public class InteractRunner {
 				}
 				
 				System.out.println("Result : " + calc.getResult());
-				calc.cleanResult();
-				System.out.println("Exit : yes/no" );
+				
+				System.out.println("You want clear result : y/n? ");
+				clear = reader.next();
+				
+			    if(clear.equals("y"))
+			    	calc.cleanResult();
+			    
+			    	
+			    
+			    
+				System.out.println("Exit : y/n?" );
 				exit = reader.next();
 			 }
 

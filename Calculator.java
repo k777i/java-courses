@@ -2,12 +2,10 @@ public class Calculator {
 	private int result;
 	
 	
-	public void add(int... params){
-		for(Integer param : params){       
-			this.result += param;
-			}
-	}
-			
+	public void add(int params,int params1){                                    //public void add(int... params)           
+		  this.result = params + params1;                                       //for(Integer param : params){       
+	}		                                                                    //this.result += param;
+	                                                                            //}
 	public void subt(int params,int params1){  
 		this.result=params - params1;
 	}
